@@ -26,31 +26,36 @@
                                 <h3 class="card-title fw-bold">Seruli</h3>
                                 <p class="text-secondary">Masuk ke Admin Seruli</p>
                             </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label fw-semibold text-secondary small">Alamat
-                                    Email</label>
-                                <input type="email" name="email" id="email" class="form-control"
-                                    placeholder="Masukkan Alamat Email" required autofocus />
-                            </div>
-                            <div class="mb-4">
-                                <label for="password" class="form-label fw-semibold text-secondary small">
-                                    Kata Sandi</label>
-                                <input type="password" name="password" id="password" class="form-control"
-                                    placeholder="Masukkan Kata Sandi" required autofocus />
-                            </div>
+
+                            <form action="/login" method="POST">
+                                @csrf
+
+                                <div class="mb-3">
+                                    <label for="email" class="form-label fw-semibold text-secondary small">Alamat
+                                        Email</label>
+                                    <input type="email" name="email" id="email" class="form-control"
+                                        placeholder="Masukkan Alamat Email" required autofocus />
+                                </div>
+                                <div class="mb-4">
+                                    <label for="password" class="form-label fw-semibold text-secondary small">
+                                        Kata Sandi</label>
+                                    <input type="password" name="password" id="password" class="form-control"
+                                        placeholder="Masukkan Kata Sandi" required autofocus />
+                                </div>
 
                                 <button type="submit"
                                     class="btn btn-primary text-white w-100 fw-semibold mb-2 p-2">Masuk</button>
 
-                                <div class="text-center">
-                                    <a href="/beranda" class="text-secondary text-decoration-none">&larr; Kembali ke
-                                        Beranda</a>
-                                </div>
+                            </form>
+                            <div class="text-center">
+                                <a href="/beranda" class="text-secondary text-decoration-none">&larr; Kembali ke
+                                    Beranda</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </main>
     <footer>
