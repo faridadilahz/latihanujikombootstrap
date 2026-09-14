@@ -24,7 +24,7 @@
 
             <div class="flex-grow-1 p-4" style="background-color: #f5f5f5;">
                 <div class="container-fluid">
-                    {{-- @include('partials.admin.topbar') --}}
+                    @include('partials.admin.topbar')
                     @include('partials.admin.statistic')
                 </div>
             </div>
