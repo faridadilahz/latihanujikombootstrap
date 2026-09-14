@@ -16,6 +16,6 @@
     </div>
 
     <div class="ms-auto">
-        <a href="/login" class="btn btn-light fw-semibold">Masuk</a>
+        <a href="/login" class="btn btn-light fw-semibold text-primary">Masuk</a>
     </div>
 </div>
