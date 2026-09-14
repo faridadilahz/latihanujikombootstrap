@@ -10,3 +10,6 @@ Route::get('/berita', function () {
     return view('guest.berita');
 });
 
+Route::get('/galeri', function () {
+    return view('guest.galeri');
+});
