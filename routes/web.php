@@ -13,3 +13,7 @@ Route::get('/berita', function () {
 Route::get('/galeri', function () {
     return view('guest.galeri');
 });
+
+Route::get('/login', function () {
+    return view('auth.login');
+});
