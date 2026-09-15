@@ -5,7 +5,7 @@
             <img src="{{ asset('storage/' . $item->gambargaleri) }}" class="card-img-top" style="height: 200px; object-fit: cover;">
             <div class="card-body text-start">
                 <small class="text-secondary">{{ $item->created_at->locale('id')->translatedFormat('d F Y') }}</small>
-                <h3 class="card-title fw-bold">{{ $item->judulgaleri }}</h3>
+                <h5 class="card-title fw-bold">{{ Str::limit($item->judulgaleri), 36 }}</h5>
             </div>
         </div>
     </div>

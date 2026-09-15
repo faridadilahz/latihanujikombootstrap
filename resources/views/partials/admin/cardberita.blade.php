@@ -5,8 +5,8 @@
                 style="height: 200px; object-fit: cover;">
             <div class="card-body text-start">
                 <small class="text-secondary">{{ $item->created_at->locale('id')->translatedFormat('d F Y') }}</small>
-                <h3 class="card-title fw-bold">{{ $item->judulberita }}</h3>
-                <p class="card-text text-secondary">{{ $item->deskripsiberita }}</p>
+                <h5 class="card-title fw-bold">{{ Str::limit($item->judulberita), 36 }}</h5>
+                <p class="card-text text-secondary">{{ Str::limit($item->deskripsiberita, 124) }}</p>
             </div>
 
             <div class="card-footer p-2">
