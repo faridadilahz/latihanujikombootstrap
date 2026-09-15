@@ -27,7 +27,8 @@
 
                     @if ($galeris->gambargaleri)
                         <div class="mb-2">
-                            <img src="{{ asset('storage/' . $galeris->gambargaleri) }}" class="rounded-3" style="max-height: 144px; object-fit: cover;">
+                            <img src="{{ asset('storage/' . $galeris->gambargaleri) }}" class="rounded-3"
+                                style="max-height: 144px; object-fit: cover;">
                         </div>
                     @endif
                     <div class="mb-4">
@@ -41,7 +42,8 @@
                         <div class="position-relative">
                             <input type="text" name="judulgaleri" id="judulgaleri"
                                 class="form-control border-0 rounded-3 py-3 pe-5"
-                                placeholder="Masukkan judul galeri disini" value="{{ old('judulgaleri', $galeris->judulgaleri) }}"">
+                                placeholder="Masukkan judul galeri disini"
+                                value="{{ old('judulgaleri', $galeris->judulgaleri) }}"">
                         </div>
                     </div>
 

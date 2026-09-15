@@ -33,8 +33,13 @@
 
         <div class="d-flex text-center justify-content-center align-items-center py-5">
             <div class="container">
-                <h1 class="fw-bold mb-3 text-black">Mewujudkan generasi unggul, berkarakter, dan kompeten di bidang teknologi dan kejuruan. Siap kerja, santun, mandiri, dan kreatif.</h1>
-                <p class="text-secondary">Sekolah Seru Sekali merupakan salah satu Sekolah Menengah Kejuruan negeri unggulan di Kota Bogor yang berkomitmen mencetak lulusan berkarakter, kompeten, dan siap bersaing di dunia industri global. Dengan kurikulum yang terintegrasi dengan kebutuhan industri modern serta fasilitas pembelajaran berbasis teknologi, Sekolah Seru Sekali terus berinovasi dalam melahirkan generasi muda yang ahli di bidangnya.</p>
+                <h1 class="fw-bold mb-3 text-black">Mewujudkan generasi unggul, berkarakter, dan kompeten di bidang
+                    teknologi dan kejuruan. Siap kerja, santun, mandiri, dan kreatif.</h1>
+                <p class="text-secondary">Sekolah Seru Sekali merupakan salah satu Sekolah Menengah Kejuruan negeri
+                    unggulan di Kota Bogor yang berkomitmen mencetak lulusan berkarakter, kompeten, dan siap bersaing di
+                    dunia industri global. Dengan kurikulum yang terintegrasi dengan kebutuhan industri modern serta
+                    fasilitas pembelajaran berbasis teknologi, Sekolah Seru Sekali terus berinovasi dalam melahirkan
+                    generasi muda yang ahli di bidangnya.</p>
             </div>
         </div>
 
@@ -62,19 +67,19 @@
 
         <div class="d-flex text-center flex-wrap justify-content-center align-items-center px-5 py-5">
             <div class="container">
-            <h2 class="fw-bold mb-3">Berita Seruli</h2>
-            <div class="row g-4 justify-content-center">
-                @include('partials.guest.cardberita')
-            </div>
+                <h2 class="fw-bold mb-3">Berita Seruli</h2>
+                <div class="row g-4 justify-content-center">
+                    @include('partials.guest.cardberita')
+                </div>
             </div>
         </div>
 
         <div class="d-flex text-center flex-wrap justify-content-center align-items-center px-5 py-5">
             <div class="container">
-            <h2 class="fw-bold mb-3">Galeri Seruli</h2>
-            <div class="row g-4 justify-content-center">
-                @include('partials.guest.cardgaleri')
-            </div>
+                <h2 class="fw-bold mb-3">Galeri Seruli</h2>
+                <div class="row g-4 justify-content-center">
+                    @include('partials.guest.cardgaleri')
+                </div>
             </div>
         </div>
 

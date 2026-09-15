@@ -4,13 +4,16 @@
     <div class="collapse navbar-collapse position-absolute start-50 translate-middle-x">
         <ul class="navbar-nav">
             <li class="nav-item-active me-4">
-                <a href="/beranda" class="nav-link {{ request()->is('beranda') || request()->is('/') ? 'active' : '' }}">Beranda</a>
+                <a href="/beranda"
+                    class="nav-link {{ request()->is('beranda') || request()->is('/') ? 'active' : '' }}">Beranda</a>
             </li>
             <li class="nav-item-active me-4">
-                <a href="/berita" class="nav-link {{ request()->is('berita') || request()->is('/') ? 'active' : '' }}">Berita</a>
+                <a href="/berita"
+                    class="nav-link {{ request()->is('berita') || request()->is('/') ? 'active' : '' }}">Berita</a>
             </li>
             <li class="nav-item-active me-4">
-                <a href="/galeri" class="nav-link {{ request()->is('galeri') || request()->is('/') ? 'active' : '' }}">Galeri</a>
+                <a href="/galeri"
+                    class="nav-link {{ request()->is('galeri') || request()->is('/') ? 'active' : '' }}">Galeri</a>
             </li>
         </ul>
     </div>

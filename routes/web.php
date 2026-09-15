@@ -16,7 +16,7 @@ Route::get('/berita/{id}', [BerandasController::class, 'showBerita'])->name('gue
 Route::get('/galeri', [BerandasController::class, 'galeri']);
 Route::get('/galeri/{id}', [BerandasController::class, 'showGaleri'])->name('guest.detailgaleri');
 
-Route::get('/login', function() {
+Route::get('/login', function () {
     return view('auth.login');
 })->name('login');
 

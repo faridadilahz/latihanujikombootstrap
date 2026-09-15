@@ -12,10 +12,12 @@
         </section>
         <section class="mb-4">
             <h3 class="fw-bold">Sekolah Seru Sekali - Seruli</h3>
-            <p class="text-secondary">Mewujudkan generasi unggul, berkarakter, dan kompeten di bidang teknologi dan kejuruan. Siap kerja, santun, mandiri, dan kreatif.</p>
+            <p class="text-secondary">Mewujudkan generasi unggul, berkarakter, dan kompeten di bidang teknologi dan
+                kejuruan. Siap kerja, santun, mandiri, dan kreatif.</p>
         </section>
     </div>
-        <div class="text-center text-secondary p-3" style="background-color: #f5f5f5;">© 2026 Sekolah Seru Sekali. Hak Cipta Dilindungi Undang-Undang.
+    <div class="text-center text-secondary p-3" style="background-color: #f5f5f5;">© 2026 Sekolah Seru Sekali. Hak Cipta
+        Dilindungi Undang-Undang.
 
-        </div>
+    </div>
 </footer>

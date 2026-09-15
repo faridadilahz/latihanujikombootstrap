@@ -36,7 +36,7 @@ class BeritasController extends Controller
             'gambarberita' => 'required|image|mimes:png,jpg|max:5012',
         ]);
 
-        $imagePath = $request->file('gambarberita')->store('berita','public');
+        $imagePath = $request->file('gambarberita')->store('berita', 'public');
 
         Beritas::create([
             'judulberita' => $request->judulberita,
@@ -50,10 +50,7 @@ class BeritasController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show($id)
-    {
-        
-    }
+    public function show($id) {}
 
     /**
      * Show the form for editing the specified resource.
@@ -78,7 +75,7 @@ class BeritasController extends Controller
         $beritas = Beritas::findOrFail($id);
 
         if ($request->hasFile('gambarberita')) {
-            if($beritas->gambarberita && Storage::disk('public')->exists($beritas->gambarberita)) {
+            if ($beritas->gambarberita && Storage::disk('public')->exists($beritas->gambarberita)) {
                 Storage::disk('public')->delete($beritas->gambarberita);
             }
             $beritas->gambarberita = $request->file('gambarberita')->store('berita', 'public');

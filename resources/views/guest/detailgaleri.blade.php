@@ -18,10 +18,11 @@
     </header>
     <main class="mt-5 pt-6" style="background-color: #f5f5f5;">
         <div class="d-flex text-center flex-column justify-content-center align-items-center px-5 py-5">
-            <h2 class="fw-bold mb-4">{{ $galeris->judulgaleri}}</h2>
-            <img src="{{ asset('storage/' . $galeris->gambargaleri) }}" alt="" class="rounded-3 mb-3" style="max-width: 850px;">
+            <h2 class="fw-bold mb-4">{{ $galeris->judulgaleri }}</h2>
+            <img src="{{ asset('storage/' . $galeris->gambargaleri) }}" alt="" class="rounded-3 mb-3"
+                style="max-width: 850px;">
             <p class="text-secondary" style="max-width: 850px;">{{ $galeris->deskripsigaleri }}</p>
-            </div>
+        </div>
         </div>
     </main>
     <footer>

@@ -17,20 +17,20 @@
         <!-- place navbar here -->
     </header>
     <main class="d-flex min-vh-100">
-            @include('partials.admin.sidebar')
+        @include('partials.admin.sidebar')
 
-            <div class="flex-grow-1 p-4" style="background-color: #f5f5f5;">
-                <div class="container-fluid">
-                    @include('partials.admin.topbarberita')
+        <div class="flex-grow-1 p-4" style="background-color: #f5f5f5;">
+            <div class="container-fluid">
+                @include('partials.admin.topbarberita')
 
-                    <div>
-                        <div class="row g-4">
-                            @include('partials.admin.cardberita')
-                        </div>
+                <div>
+                    <div class="row g-4">
+                        @include('partials.admin.cardberita')
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
+    </main>
     <footer>
         <!-- place footer here -->
     </footer>

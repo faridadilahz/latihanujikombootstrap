@@ -40,10 +40,10 @@
                     </div>
 
                     <div class="mb-4">
-                        <label for="deskripsiberita" class="form-label text-dark fw-normal mb-2">Deskripsi Berita</label>
+                        <label for="deskripsiberita" class="form-label text-dark fw-normal mb-2">Deskripsi
+                            Berita</label>
                         <div class="position-relative">
-                            <textarea name="deskripsiberita" id="deskripsiberita" rows="5"
-                                class="form-control border-0 rounded-3 py-3 pe-5"
+                            <textarea name="deskripsiberita" id="deskripsiberita" rows="5" class="form-control border-0 rounded-3 py-3 pe-5"
                                 placeholder="Masukkan deskripsi berita disini" required></textarea>
                         </div>
                     </div>

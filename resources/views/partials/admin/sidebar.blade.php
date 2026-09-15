@@ -35,12 +35,12 @@
         </li>
 
         <li class="nav-item">
-        <form action="{{ route('logout') }}" method="post">
-            @csrf
-            <button type="submit" class="nav-link text-danger w-100 text-start border-0 bg-transparent"><i
-                    class="fa-solid fa-right-from-bracket me-3 width-fixed"></i>Keluar
-            </button>
-        </form>
+            <form action="{{ route('logout') }}" method="post">
+                @csrf
+                <button type="submit" class="nav-link text-danger w-100 text-start border-0 bg-transparent"><i
+                        class="fa-solid fa-right-from-bracket me-3 width-fixed"></i>Keluar
+                </button>
+            </form>
     </ul>
     </li>
 </div>

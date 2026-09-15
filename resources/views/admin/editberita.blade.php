@@ -26,10 +26,10 @@
                     @method('PUT')
 
                     @if ($beritas->gambarberita)
-                    <div class="mb-2">
-                        <img src="{{ asset('storage/' . $beritas->gambarberita) }}" class="rounded-3" style="max-height: 144px; object-fit: cover;">
-                    </div>
-                        
+                        <div class="mb-2">
+                            <img src="{{ asset('storage/' . $beritas->gambarberita) }}" class="rounded-3"
+                                style="max-height: 144px; object-fit: cover;">
+                        </div>
                     @endif
 
                     <div class="mb-4">
@@ -43,15 +43,16 @@
                         <div class="position-relative">
                             <input type="text" name="judulberita" id="judulberita"
                                 class="form-control border-0 rounded-3 py-3 pe-5"
-                                placeholder="Masukkan judul berita disini" value="{{ old('judulberita', $beritas->judulberita) }}">
+                                placeholder="Masukkan judul berita disini"
+                                value="{{ old('judulberita', $beritas->judulberita) }}">
                         </div>
                     </div>
 
                     <div class="mb-4">
-                        <label for="deskripsiberita" class="form-label text-dark fw-normal mb-2">Deskripsi Berita</label>
+                        <label for="deskripsiberita" class="form-label text-dark fw-normal mb-2">Deskripsi
+                            Berita</label>
                         <div class="position-relative">
-                            <textarea name="deskripsiberita" id="deskripsiberita" rows="5"
-                                class="form-control border-0 rounded-3 py-3 pe-5"
+                            <textarea name="deskripsiberita" id="deskripsiberita" rows="5" class="form-control border-0 rounded-3 py-3 pe-5"
                                 placeholder="Masukkan deskripsi berita disini">{{ old('deskripsiberita', $beritas->deskripsiberita) }}</textarea>
                         </div>
                     </div>
