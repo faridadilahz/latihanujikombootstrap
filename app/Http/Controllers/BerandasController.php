@@ -29,4 +29,9 @@ class BerandasController extends Controller
         $beritas = Beritas::findOrFail($id);
         return view('guest.detailberita', compact('beritas'));
     }
+
+    public function showGaleri($id) {
+        $galeris  = Galeris::findOrFail($id);
+        return view('guest.detailgaleri', compact('galeris'));
+    }
 }
