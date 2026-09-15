@@ -13,8 +13,8 @@
 @empty
     <div class="col-12 py-5">
         <div class="text-secondary text-center">
-            <i class="fa-solid fa-newspaper fs-1 mb-3"></i>
-            <h5>Belum Ada Berita</h5>
+            <i class="fa-solid fa-image fs-1 mb-3"></i>
+            <h5>Belum ada galeri</h5>
         </div>
     </div>
     @endforelse
