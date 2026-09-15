@@ -8,6 +8,19 @@
                 <h3 class="card-title fw-bold">{{ $item->judulberita }}</h3>
                 <p class="card-text text-secondary">{{ $item->deskripsiberita }}</p>
             </div>
+
+            <div class="card-footer p-2">
+                <div class="d-flex flex-column gap-2">
+                    <a href="{{ route('berita.edit', $item->id) }}" class="btn btn-primary fw-semibold p-2">Edit</a>
+
+                    <form action="{{ route('berita.destroy', $item->id) }}" method="POST"
+                        onsubmit="return confirm('Apakah Anda yakin ingin menghapus berita ini?')">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-danger p-2 w-100">Hapus</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 
