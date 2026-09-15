@@ -50,9 +50,9 @@ class BeritasController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Beritas $beritas)
+    public function show($id)
     {
-        //
+        
     }
 
     /**

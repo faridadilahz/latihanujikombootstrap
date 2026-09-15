@@ -24,4 +24,9 @@ class BerandasController extends Controller
         $galeris = Galeris::latest()->get();
         return view('guest.galeri', compact('galeris'));
     }
+
+    public function showBerita($id) {
+        $beritas = Beritas::findOrFail($id);
+        return view('guest.detailberita', compact('beritas'));
+    }
 }

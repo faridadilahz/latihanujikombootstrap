@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/beranda', [BerandasController::class, 'showBeranda']);
 
 Route::get('/berita', [BerandasController::class, 'berita']);
+Route::get('/berita/{id}', [BerandasController::class, 'showBerita'])->name('guest.detailberita');
 
 Route::get('/galeri', [BerandasController::class, 'galeri']);
 
