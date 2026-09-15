@@ -1,9 +1,20 @@
-<div class="col-md-4 col-sm-6">
-    <div class="card h-100 shadow-sm border-0">
-        <img src="../assets/img/smkn4bogor.jpg" class="card-img-top" style="height: 200px; object-fit: cover;">
-        <div class="card-body text-start">
-            <small class="text-secondary">14 September 2026</small>
-            <h3 class="card-title fw-bold">Galeri di Seruli</h3>
+@forelse ($galeris as $item)
+
+    <div class="col-md-4 col-sm-6">
+        <div class="card h-100 shadow-sm border-0">
+            <img src="{{ asset('storage/' . $item->gambargaleri) }}" class="card-img-top" style="height: 200px; object-fit: cover;">
+            <div class="card-body text-start">
+                <small class="text-secondary">{{ $item->created_at->locale('id')->translatedFormat('d F Y') }}</small>
+                <h3 class="card-title fw-bold">{{ $item->judulgaleri }}</h3>
+            </div>
         </div>
     </div>
-</div>
+
+@empty
+    <div class="col-12 py-5">
+        <div class="text-secondary text-center">
+            <i class="fa-solid fa-newspaper fs-1 mb-3"></i>
+            <h5>Belum Ada Berita</h5>
+        </div>
+    </div>
+    @endforelse

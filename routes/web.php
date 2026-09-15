@@ -1,24 +1,22 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BerandasController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\BeritasController;
 use App\Http\Controllers\GalerisController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/beranda', function () {
-    return view('guest.beranda');
-});
+Route::get('/beranda', [BerandasController::class, 'showBeranda']);
 
-Route::get('/berita', function () {
-    return view('guest.berita');
-});
+Route::get('/berita', [BerandasController::class, 'berita']);
 
-Route::get('/galeri', function () {
-    return view('guest.galeri');
-});
+Route::get('/galeri', [BerandasController::class, 'galeri']);
 
-Route::get('/login', [AuthController::class, 'showLoginForm']);
+Route::get('/login', function() {
+    return view('auth.login');
+})->name('login');
+
 Route::post('/login', [AuthController::class, 'authenticate']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
