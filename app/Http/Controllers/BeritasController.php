@@ -12,7 +12,7 @@ class BeritasController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.kelolaberita');
     }
 
     /**

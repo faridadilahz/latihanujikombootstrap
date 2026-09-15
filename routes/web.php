@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\BeritasController;
+use App\Http\Controllers\GalerisController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/beranda', function () {
@@ -20,6 +22,10 @@ Route::get('/login', [AuthController::class, 'showLoginForm']);
 Route::post('/login', [AuthController::class, 'authenticate']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
-Route::middleware(['auth'])->group(function() {
+Route::middleware(['auth'])->group(function () {
     Route::get('admin/dasbor', [DashboardController::class, 'index'])->name('admin.dasbor');
+
+    Route::get('admin/berita', [BeritasController::class, 'index'])->name('admin.berita');
+
+    Route::get('admin/galeri', [GalerisController::class, 'index'])->name('admin.galeri');
 });
