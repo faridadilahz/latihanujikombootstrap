@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Dashboard;
+use App\Models\Beritas;
+use App\Models\Galeris;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -12,7 +14,10 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('admin.dasbor');
+        $totalBerita = Beritas::count();
+        $totalGaleri = Galeris::count();
+
+        return view('admin.dasbor', compact('totalBerita', 'totalGaleri'));
     }
 
     /**
