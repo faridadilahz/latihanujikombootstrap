@@ -5,6 +5,7 @@ use App\Http\Controllers\BerandasController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\BeritasController;
 use App\Http\Controllers\GalerisController;
+use App\Models\Galeris;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/beranda', [BerandasController::class, 'showBeranda']);
@@ -36,5 +37,6 @@ Route::middleware(['auth'])->group(function () {
     Route::post('admin/galeri/posting-galeri', [GalerisController::class, 'store'])->name('galeri.store');
 
     Route::get('admin/galeri/edit-galeri/{id}', [GalerisController::class, 'edit'])->name('galeri.edit');
+    Route::put('admin/galeri/{id}', [GalerisController::class, 'update'])->name('galeri.update');
     Route::delete('admin/galeri/{id}', [GalerisController::class, 'destroy'])->name('galeri.destroy');
 });
