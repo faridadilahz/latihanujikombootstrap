@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Galeris;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class GalerisController extends Controller
 {
@@ -34,7 +35,7 @@ class GalerisController extends Controller
             'gambargaleri' => 'required|image|mimes:png,jpg|max:5012'
         ]);
 
-        $imagePath = $request->file('gambargaleri')->store('galeri','public');
+        $imagePath = $request->file('gambargaleri')->store('galeri', 'public');
 
         Galeris::create([
             'judulgaleri' => $request->judulgaleri,
@@ -63,16 +64,37 @@ class GalerisController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Galeris $galeris)
+    public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'judulgaleri' => 'required',
+            'gambargaleri' => 'required|image|mimes:png,jpg|max:5012'
+        ]);
+
+        $galeris = Galeris::findOrFail($id);
+
+        if ($request->hasFile('gambargaleri')) {
+            if ($galeris->gambargaleri && Storage::disk('public')->exists($galeris->gambargaleri)) {
+                Storage::disk('public')->delete($galeris->gambargaleri);
+            }
+
+            $galeris->gambarberita = $request->file('gambargaleri')->store('galeri', 'public');
+        }
+
+        $galeris->judulberita = $request->judulgaleri;
+        $galeris->save();
+
+        return redirect()->route('galeri')->with('success');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Galeris $galeris)
+    public function destroy($id)
     {
-        //
+        $galeris = Galeris::findOrFail($id);
+        $galeris->delete();
+
+        return redirect()->route('galeri')->with('success');
     }
 }

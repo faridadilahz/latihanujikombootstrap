@@ -7,6 +7,19 @@
             <small class="text-secondary">{{ $item->created_at->locale('id')->translatedFormat('d F Y') }}</small>
             <h3 class="card-title fw-bold">{{ $item->judulgaleri }}</h3>
         </div>
+
+        <div class="card-footer p-2">
+                <div class="d-flex flex-column gap-2">
+                    <a href="{{ route('galeri.edit', $item->id) }}" class="btn btn-primary fw-semibold p-2">Edit</a>
+
+                    <form action="{{ route('galeri.destroy', $item->id) }}" method="POST"
+                        onsubmit="return confirm('Apakah Anda yakin ingin menghapus galeri ini?')">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-danger p-2 w-100">Hapus</button>
+                    </form>
+                </div>
+            </div>
     </div>
 </div>
 

@@ -33,4 +33,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('admin/galeri', [GalerisController::class, 'index'])->name('galeri');
     Route::get('admin/galeri/posting-galeri', [GalerisController::class, 'create'])->name('galeri.posting');
     Route::post('admin/galeri/posting-galeri', [GalerisController::class, 'store'])->name('galeri.store');
+
+    Route::get('admin/galeri/edit-galeri/{id}', [GalerisController::class, 'edit'])->name('galeri.edit');
+    Route::delete('admin/galeri/{id}', [GalerisController::class, 'destroy'])->name('galeri.destroy');
 });
