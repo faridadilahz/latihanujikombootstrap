@@ -25,7 +25,9 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::middleware(['auth'])->group(function () {
     Route::get('admin/dasbor', [DashboardController::class, 'index'])->name('admin.dasbor');
 
-    Route::get('admin/berita', [BeritasController::class, 'index'])->name('admin.berita');
+    Route::get('admin/berita', [BeritasController::class, 'index'])->name('berita');
+    Route::get('admin/berita/posting-berita', [BeritasController::class, 'create'])->name('berita.posting');
+    Route::post('admin/berita/posting-berita', [BeritasController::class, 'store'])->name('berita.store');
 
     Route::get('admin/galeri', [GalerisController::class, 'index'])->name('admin.galeri');
 });

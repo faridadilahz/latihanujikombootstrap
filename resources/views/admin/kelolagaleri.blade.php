@@ -25,6 +25,12 @@
             <div class="flex-grow-1 p-4" style="background-color: #f5f5f5;">
                 <div class="container-fluid">
                     @include('partials.admin.topbargaleri')
+
+                    <div>
+                        <div class="row g-4">
+                            @include('partials.admin.cardgaleri')
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>

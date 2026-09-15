@@ -12,7 +12,8 @@ class BeritasController extends Controller
      */
     public function index()
     {
-        return view('admin.kelolaberita');
+        $beritas = Beritas::latest()->get();
+        return view('admin.kelolaberita', compact('beritas'));
     }
 
     /**
@@ -20,7 +21,7 @@ class BeritasController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.postingberita');
     }
 
     /**
@@ -28,7 +29,21 @@ class BeritasController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'judulberita' => 'required',
+            'deskripsiberita' => 'required',
+            'gambarberita' => 'required|image|mimes:png,jpg|max:5012',
+        ]);
+
+        $imagePath = $request->file('gambarberita')->store('berita','public');
+
+        Beritas::create([
+            'judulberita' => $request->judulberita,
+            'deskripsiberita' => $request->deskripsiberita,
+            'gambarberita' => $imagePath,
+        ]);
+
+        return redirect()->route('berita')->with('success');
     }
 
     /**

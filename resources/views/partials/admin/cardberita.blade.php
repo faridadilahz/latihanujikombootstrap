@@ -1,14 +1,23 @@
-<div class="col-md-4 col-sm-6">
-    <div class="card h-100 shadow-sm border-0">
-        <img src="../assets/img/smkn4bogor.jpg" class="card-img-top" style="height: 200px; object-fit: cover;">
-        <div class="card-body text-start">
-            <small class="text-secondary">14 September 2026</small>
-            <h3 class="card-title fw-bold">Berita di Seruli</h3>
-            <p class="text-secondary text-truncate">Sekolah Seru Sekali merupakan salah satu Sekolah Menengah Kejuruan
-                negeri unggulan di Kota Bogor yang berkomitmen mencetak lulusan berkarakter, kompeten, dan siap bersaing
-                di dunia industri global. Dengan kurikulum yang terintegrasi dengan kebutuhan industri modern serta
-                fasilitas pembelajaran berbasis teknologi, Sekolah Seru Sekali terus berinovasi dalam melahirkan
-                generasi muda yang ahli di bidangnya.</p>
+@forelse ($beritas as $item)
+    <div class="col-md-4 col-sm-6">
+        <div class="card h-100 shadow-sm border-0">
+            <img src="{{ asset('storage/' . $item->gambarberita) }}" class="card-img-top"
+                style="height: 200px; object-fit: cover;">
+            <div class="card-body text-start">
+                <small class="text-secondary">{{ $item->created_at->locale('id')->translatedFormat('d F Y') }}</small>
+                <h3 class="card-title fw-bold">{{ $item->judulberita }}</h3>
+                <p class="card-text text-secondary">{{ $item->deskripsiberita }}</p>
+            </div>
         </div>
     </div>
-</div>
+
+@empty
+    <!-- Tampilan jika tidak ada berita -->
+    <div class="col-12 py-5">
+        <div class="text-secondary text-center">
+            <i class="fa-solid fa-newspaper fs-1 mb-3"></i>
+            <h5>Belum Ada Berita</h5>
+            <p class="small">Klik tombol "Posting Berita" di atas untuk menambahkan berita baru.</p>
+        </div>
+    </div>
+@endforelse
