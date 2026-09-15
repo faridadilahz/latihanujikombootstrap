@@ -9,7 +9,7 @@
                 <p class="card-text text-secondary">{{ Str::limit($item->deskripsiberita, 124) }}</p>
             </div>
 
-            <div class="card-footer p-2">
+            <div class="card-footer p-3">
                 <div class="d-flex flex-column gap-2">
                     <a href="{{ route('berita.edit', $item->id) }}" class="btn btn-primary fw-semibold p-2">Edit</a>
 

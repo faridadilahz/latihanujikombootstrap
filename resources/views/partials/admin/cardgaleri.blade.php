@@ -8,7 +8,7 @@
                 <h5 class="card-title fw-bold">{{ Str::limit($item->judulgaleri, 36) }}</h5>
             </div>
 
-            <div class="card-footer p-2">
+            <div class="card-footer p-3">
                 <div class="d-flex flex-column gap-2">
                     <a href="{{ route('galeri.edit', $item->id) }}" class="btn btn-primary fw-semibold p-2">Edit</a>
 
