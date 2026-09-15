@@ -28,6 +28,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('admin/berita/posting-berita', [BeritasController::class, 'store'])->name('berita.store');
 
     Route::get('admin/berita/edit-berita/{id}', [BeritasController::class, 'edit'])->name('berita.edit');
+    Route::put('admin/berita/{id}', [BeritasController::class, 'update'])->name('berita.update');
     Route::delete('admin/berita/{id}', [BeritasController::class, 'destroy'])->name('berita.destroy');
 
     Route::get('admin/galeri', [GalerisController::class, 'index'])->name('galeri');

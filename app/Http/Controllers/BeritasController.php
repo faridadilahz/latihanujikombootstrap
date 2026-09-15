@@ -72,7 +72,7 @@ class BeritasController extends Controller
         $request->validate([
             'judulberita' => 'required',
             'deskripsiberita' => 'required',
-            'gambarberita' => 'required|image|mimes:png,jpg|max:5012',
+            'gambarberita' => 'nullable|image|mimes:png,jpg|max:5012',
         ]);
 
         $beritas = Beritas::findOrFail($id);

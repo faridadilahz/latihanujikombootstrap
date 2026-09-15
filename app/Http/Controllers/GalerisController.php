@@ -68,7 +68,7 @@ class GalerisController extends Controller
     {
         $request->validate([
             'judulgaleri' => 'required',
-            'gambargaleri' => 'required|image|mimes:png,jpg|max:5012'
+            'gambargaleri' => 'nullable|image|mimes:png,jpg|max:5012'
         ]);
 
         $galeris = Galeris::findOrFail($id);

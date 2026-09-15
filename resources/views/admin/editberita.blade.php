@@ -21,13 +21,21 @@
         <div class="flex-grow-1 p-4" style="background-color: #f5f5f5;">
             <div class="container-fluid" style="max-width: 900px;">
 
-                <form action="{{ route('berita.store') }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('berita.update', $beritas->id) }}" method="POST" enctype="multipart/form-data">
                     @csrf
+                    @method('PUT')
+
+                    @if ($beritas->gambarberita)
+                    <div class="mb-2">
+                        <img src="{{ asset('storage/' . $beritas->gambarberita) }}" class="rounded-3" style="max-height: 144px; object-fit: cover;">
+                    </div>
+                        
+                    @endif
 
                     <div class="mb-4">
                         <label for="gambarberita" class="form-label text-dark fw-semibold">Gambar Berita</label>
                         <input type="file" name="gambarberita" id="gambarberita" class="form-control"
-                            accept="image/*" required>
+                            accept="image/*">
                     </div>
 
                     <div class="mb-4">
@@ -35,7 +43,7 @@
                         <div class="position-relative">
                             <input type="text" name="judulberita" id="judulberita"
                                 class="form-control border-0 rounded-3 py-3 pe-5"
-                                placeholder="Masukkan judul berita disini" required>
+                                placeholder="Masukkan judul berita disini" value="{{ old('judulberita', $beritas->judulberita) }}">
                         </div>
                     </div>
 
@@ -44,12 +52,12 @@
                         <div class="position-relative">
                             <textarea name="deskripsiberita" id="deskripsiberita" rows="5"
                                 class="form-control border-0 rounded-3 py-3 pe-5"
-                                placeholder="Masukkan deskripsi berita disini" required></textarea>
+                                placeholder="Masukkan deskripsi berita disini">{{ old('deskripsiberita', $beritas->deskripsiberita) }}</textarea>
                         </div>
                     </div>
 
                     <div class="d-flex gap-2">
-                        <button type="submit" class="btn btn-primary text-white">Posting</button>
+                        <button type="submit" class="btn btn-primary text-white">Simpan Perubahan</button>
                         <a href="{{ route('berita') }}" class="btn btn-outline-primary">Batal</a>
                     </div>
 
