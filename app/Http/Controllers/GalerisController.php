@@ -12,7 +12,8 @@ class GalerisController extends Controller
      */
     public function index()
     {
-        return view('admin.kelolagaleri');
+        $galeris = Galeris::latest()->get();
+        return view('admin.kelolagaleri', compact('galeris'));
     }
 
     /**
@@ -20,7 +21,7 @@ class GalerisController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.postinggaleri');
     }
 
     /**
@@ -28,7 +29,19 @@ class GalerisController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'judulgaleri' => 'required',
+            'gambargaleri' => 'required|image|mimes:png,jpg|max:5012'
+        ]);
+
+        $imagePath = $request->file('gambargaleri')->store('galeri','public');
+
+        Galeris::create([
+            'judulgaleri' => $request->judulgaleri,
+            'gambargaleri' => $imagePath
+        ]);
+
+        return redirect()->route('galeri')->with('success');
     }
 
     /**

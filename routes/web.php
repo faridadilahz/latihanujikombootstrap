@@ -29,5 +29,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('admin/berita/posting-berita', [BeritasController::class, 'create'])->name('berita.posting');
     Route::post('admin/berita/posting-berita', [BeritasController::class, 'store'])->name('berita.store');
 
-    Route::get('admin/galeri', [GalerisController::class, 'index'])->name('admin.galeri');
+    Route::get('admin/galeri', [GalerisController::class, 'index'])->name('galeri');
+    Route::get('admin/galeri/posting-galeri', [GalerisController::class, 'create'])->name('galeri.posting');
+    Route::post('admin/galeri/posting-galeri', [GalerisController::class, 'store'])->name('galeri.store');
 });
