@@ -48,9 +48,10 @@ class GalerisController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Galeris $galeris)
+    public function show($id)
     {
-        //
+        $galeris = Galeris::findOrFail($id);
+        return view('admin.detailgaleri', compact('galeris'));
     }
 
     /**
