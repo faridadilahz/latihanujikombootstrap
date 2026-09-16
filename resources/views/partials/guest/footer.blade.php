@@ -7,6 +7,7 @@
         <section class="mb-4">
             <a href="/" class="btn text-primary btn-floating m-1"><i class="fab fa-facebook-f fa-lg"></i></a>
             <a href="/" class="btn text-primary btn-floating m-1"><i class="fab fa-whatsapp fa-lg"></i></a>
+            <a href="/" class="btn text-primary btn-floating m-1"><i class="fa-regular fa-envelope fa-lg"></i></a>
             <a href="/" class="btn text-primary btn-floating m-1"><i class="fab fa-instagram fa-lg"></i></a>
             <a href="/" class="btn text-primary btn-floating m-1"><i class="fab fa-youtube fa-lg"></i></a>
         </section>
