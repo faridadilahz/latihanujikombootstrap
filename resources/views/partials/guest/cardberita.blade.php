@@ -5,7 +5,7 @@
                 style="height: 200px; object-fit: cover;">
             <div class="card-body text-start">
                 <small class="text-secondary">{{ $item->created_at->locale('id')->translatedFormat('d F Y') }}</small>
-                <h5 class="card-title fw-bold">{{ Str::limit($item->judulberita, 36) }}</h5>
+                <h5 class="card-title fw-bold">{{ Str::limit($item->judulberita, 96) }}</h5>
                 <p class="text-secondary text-truncate">{{ Str::limit($item->deskripsiberita, 124) }}</p>
                 <div class="d-flex flex-column">
                     <a href="{{ route('guest.detailberita', $item->id) }}" class="btn btn-primary p-2 fw-semibold">Baca
