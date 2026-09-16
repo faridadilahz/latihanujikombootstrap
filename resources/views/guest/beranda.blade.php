@@ -47,19 +47,19 @@
         <div class="d-flex text-center flex-wrap justify-content-center align-items-center px-5 py-5">
             <h2 class="fw-bold mb-3">Jurusan di Seruli</h2>
             <div class="d-flex gap-4">
-                <div class="card shadow-sm border-0 py-3 px-3">
+                <div class="card rounded-3 border-0 py-3 px-3">
                     <h3 class="card-title">PPLG</h3>
                     <p class="text-secondary">Pengembangan Perangkat Lunak dan Gim</p>
                 </div>
-                <div class="card shadow-sm border-0 py-3 px-3">
+                <div class="card rounded-3 border-0 py-3 px-3">
                     <h3 class="card-title">TJKT</h3>
                     <p class="text-secondary">Teknik Jaringan Komputer dan Telekomunikasi</p>
                 </div>
-                <div class="card shadow-sm border-0 py-3 px-3">
+                <div class="card rounded-3 border-0 py-3 px-3">
                     <h3 class="card-title">TKRO</h3>
                     <p class="text-secondary">Teknik Kendaraan Ringan Otomotif</p>
                 </div>
-                <div class="card shadow-sm border-0 py-3 px-3">
+                <div class="card rounded-3 border-0 py-3 px-3">
                     <h3 class="card-title">TPFL</h3>
                     <p class="text-secondary">Teknik Pengelasan dan Fabrikasi Logam</p>
                 </div>
