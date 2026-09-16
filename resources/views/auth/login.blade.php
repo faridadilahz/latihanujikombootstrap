@@ -27,6 +27,12 @@
                                 <p class="text-secondary">Masuk ke Admin Seruli</p>
                             </div>
 
+                            @if ($errors->any())
+                                <div class="alert alert-danger py-2 small mb-3">
+                                    {{ $errors->first() }}
+                                </div>
+                            @endif
+
                             <form action="/login" method="POST">
                                 @csrf
 
