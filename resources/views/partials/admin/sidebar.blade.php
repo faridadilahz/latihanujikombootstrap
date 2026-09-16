@@ -38,7 +38,7 @@
         </li>
 
         <li class="nav-item">
-            <form action="{{ route('logout') }}" method="post">
+            <form action="{{ route('logout') }}" method="post" onsubmit="return confirm('Apakah Anda yakin keluar dari akun ini?')">
                 @csrf
                 <button type="submit" class="nav-link text-danger w-100 text-start border-0 bg-transparent"><i
                         class="fa-solid fa-right-from-bracket me-3 width-fixed"></i>Keluar
