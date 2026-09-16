@@ -83,6 +83,14 @@
             </div>
         </div>
 
+        <div class="d-flex text-center flex-wrap justify-content-center align-items-center px-5 py-5">
+            <div class="container">
+                <div class="row g-4 justify-content-center">
+                    @include('partials.guest.kontak')
+                </div>
+            </div>
+        </div>
+
     </main>
     <footer>
         @include('partials.guest.footer')
