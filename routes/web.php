@@ -43,4 +43,8 @@ Route::middleware(['auth'])->group(function () {
     Route::get('admin/galeri/edit-galeri/{id}', [GalerisController::class, 'edit'])->name('galeri.edit');
     Route::put('admin/galeri/{id}', [GalerisController::class, 'update'])->name('galeri.update');
     Route::delete('admin/galeri/{id}', [GalerisController::class, 'destroy'])->name('galeri.destroy');
+
+    Route::get('admin/profil', function() {
+        return view('admin.profil');
+    });
 });
