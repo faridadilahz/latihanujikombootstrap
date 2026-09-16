@@ -33,6 +33,7 @@
 
         <div class="d-flex text-center justify-content-center align-items-center py-5">
             <div class="container">
+                <img src="../assets/img/fotoberanda.png" class="rounded-4 mb-4" style="max-width: 860px;">
                 <h1 class="fw-bold mb-3 text-black">Mewujudkan generasi unggul, berkarakter, dan kompeten di bidang
                     teknologi dan kejuruan. Siap kerja, santun, mandiri, dan kreatif.</h1>
                 <p class="text-secondary">Sekolah Seru Sekali merupakan salah satu Sekolah Menengah Kejuruan negeri
