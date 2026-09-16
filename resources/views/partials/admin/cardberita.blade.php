@@ -1,6 +1,6 @@
 @forelse ($beritas as $item)
     <div class="col-md-4 col-sm-6">
-        <div class="card h-100 shadow-sm border-0">
+        <div class="card h-100 rounded-4 shadow-sm border-0">
             <a href="{{ route('berita.show', $item->id) }}" class="text-decoration-none text-dark">
             <img src="{{ asset('storage/' . $item->gambarberita) }}" class="card-img-top"
                 style="height: 200px; object-fit: cover;">
