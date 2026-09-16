@@ -1,5 +1,8 @@
 <div class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top z-3 p-3 px-5">
-    <a href="/beranda" class="navbar-brand fw-bold text-white">Seruli</a>
+    <div class="d-flex align-items-center">
+        <img src="../assets/img/logoseruliwhite.png" class="me-1" style="max-width: 36px; object-fit: cover;">
+        <p class="navbar-brand fw-bold mb-0">Seruli</p>
+    </div>
 
     <div class="collapse navbar-collapse position-absolute start-50 translate-middle-x">
         <ul class="navbar-nav">
