@@ -86,6 +86,10 @@
                 <h2 class="fw-bold mb-3">Galeri Seruli</h2>
                 <div class="row g-4 justify-content-center">
                     @include('partials.guest.cardgaleri')
+
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="/galeri" class="btn btn-white text-secondary">Lihat semua galeri  <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
