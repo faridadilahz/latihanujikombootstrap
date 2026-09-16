@@ -10,6 +10,8 @@
     <!-- Bootstrap CSS v5.3.8 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -71,6 +73,10 @@
                 <h2 class="fw-bold mb-3">Berita Seruli</h2>
                 <div class="row g-4 justify-content-center">
                     @include('partials.guest.cardberita')
+
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="/berita" class="btn btn-white text-secondary">Lihat semua berita  <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
