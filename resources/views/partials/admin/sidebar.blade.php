@@ -6,6 +6,9 @@
     style="width: 256px;">
 
     <a href="/admin/dasbor" class="d-flex text-decoration-none px-2 mb-4">
+
+        <img src="../assets/img/logoseruliblue.png" alt="" class="me-1" style="max-width: 36px; object-fit: cover;">
+
         <span class="fs-4 fw-bold">Seruli</span>
     </a>
 
