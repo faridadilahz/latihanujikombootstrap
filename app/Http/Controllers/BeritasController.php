@@ -50,7 +50,10 @@ class BeritasController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show($id) {}
+    public function show($id) {
+        $beritas = Beritas::findOrFail($id);
+        return view('admin.detailberita', compact('beritas'));
+    }
 
     /**
      * Show the form for editing the specified resource.
