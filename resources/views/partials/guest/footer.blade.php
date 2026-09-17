@@ -12,12 +12,12 @@
             <a href="https://www.youtube.com/channel/UC4M-6Oc1ZvECz00MlMa4v_A/videos?app=desktop" class="btn text-primary btn-floating m-1"><i class="fab fa-youtube fa-lg"></i></a>
         </section>
         <section class="mb-4">
-            <h3 class="fw-bold">Sekolah Seru Sekali - Seruli</h3>
+            <h3 class="fw-bold">Seycis</h3>
             <p class="text-secondary">Mewujudkan generasi unggul, berkarakter, dan kompeten di bidang teknologi dan
                 kejuruan. Siap kerja, santun, mandiri, dan kreatif.</p>
         </section>
     </div>
-    <div class="text-center text-secondary p-3" style="background-color: #f5f5f5;">© 2026 Sekolah Seru Sekali. Hak Cipta
+    <div class="text-center text-secondary p-3" style="background-color: #f5f5f5;">© 2026 Seycis. Hak Cipta
         Dilindungi Undang-Undang.
 
     </div>

@@ -2,7 +2,7 @@
 <html lang="en" data-bs-theme="light">
 
 <head>
-    <title>Masuk - Seruli</title>
+    <title>Masuk - Seycis</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -25,8 +25,8 @@
                     <div class="col-md-5 col-lg-5">
                         <div class="card h-100 border-0 px-3 py-4">
                             <div class="text-center">
-                                <h3 class="card-title fw-bold">Seruli</h3>
-                                <p class="text-secondary">Masuk ke Admin Seruli</p>
+                                <h3 class="card-title fw-bold">Seycis</h3>
+                                <p class="text-secondary">Masuk ke Admin Seycis</p>
                             </div>
 
                             @if ($errors->any())

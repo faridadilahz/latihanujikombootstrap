@@ -2,7 +2,7 @@
 <html lang="en" data-bs-theme="light">
 
 <head>
-    <title>Profil - Seruli</title>
+    <title>Profil - Seycis</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -25,10 +25,10 @@
             <div class="col-md-0 col-sm-4">
                 <div class="card border-0 rounded-3 mb-3">
                     <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                        <img src="../assets/img/logoseruliblue.png" class="rounded-3" style="max-width: 192px;">
+                        <img src="../assets/img/logoSeycisblue.png" class="rounded-3" style="max-width: 192px;">
                         <div class="d-flex flex-column">
-                            <h3 class="card-title fw-bold">Admin Seruli</h3>
-                            <p class="text-secondary">adminseruli@gmail.com</p>
+                            <h3 class="card-title fw-bold">Admin Seycis</h3>
+                            <p class="text-secondary">adminseycis@gmail.com</p>
                         </div>
                     </div>
                 </div>

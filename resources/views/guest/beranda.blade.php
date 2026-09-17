@@ -2,7 +2,7 @@
 <html lang="en" data-bs-theme="light">
 
 <head>
-    <title>Beranda - Seruli</title>
+    <title>Beranda - Seycis</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -23,7 +23,7 @@
     <main style="background-color: #f5f5f5;">
         <div class="d-flex text-center bg-primary min-vh-100 justify-content-center align-items-center">
             <div class="container">
-                <h1 class="fw-bold mb-2 text-white">Selamat Datang di Website Resmi Sekolah Seru Sekali</h1>
+                <h1 class="fw-bold mb-2 text-white">Selamat Datang di Website Resmi Seycis</h1>
                 <p class="text-secondary text-white">Mewujudkan generasi unggul, berkarakter, dan kompeten di bidang
                     teknologi dan kejuruan. Siap kerja, santun, mandiri, dan kreatif.</p>
 
@@ -40,16 +40,16 @@
                 <img src="../assets/img/fotoberanda.png" class="rounded-4 mb-4" style="max-width: 860px;">
                 <h1 class="fw-bold mb-3 text-black">Mewujudkan generasi unggul, berkarakter, dan kompeten di bidang
                     teknologi dan kejuruan. Siap kerja, santun, mandiri, dan kreatif.</h1>
-                <p class="text-secondary">Sekolah Seru Sekali merupakan salah satu Sekolah Menengah Kejuruan negeri
+                <p class="text-secondary">Seycis merupakan salah satu Sekolah Menengah Kejuruan negeri
                     unggulan di Kota Bogor yang berkomitmen mencetak lulusan berkarakter, kompeten, dan siap bersaing di
                     dunia industri global. Dengan kurikulum yang terintegrasi dengan kebutuhan industri modern serta
-                    fasilitas pembelajaran berbasis teknologi, Sekolah Seru Sekali terus berinovasi dalam melahirkan
+                    fasilitas pembelajaran berbasis teknologi, Seycis terus berinovasi dalam melahirkan
                     generasi muda yang ahli di bidangnya.</p>
             </div>
         </div>
 
         <div class="d-flex text-center flex-wrap justify-content-center align-items-center px-5 py-5">
-            <h2 class="fw-bold mb-3">Jurusan di Seruli</h2>
+            <h2 class="fw-bold mb-3">Jurusan di Seycis</h2>
             <div class="d-flex gap-4">
                 <div class="card rounded-3 border-0 py-3 px-3">
                     <h3 class="card-title">PPLG</h3>
@@ -72,7 +72,7 @@
 
         <div class="d-flex text-center flex-wrap justify-content-center align-items-center px-5 py-5">
             <div class="container">
-                <h2 class="fw-bold mb-3">Berita Seruli</h2>
+                <h2 class="fw-bold mb-3">Berita Seycis</h2>
                 <div class="row g-4 justify-content-center">
                     @include('partials.guest.cardberita')
 
@@ -86,7 +86,7 @@
 
         <div class="d-flex text-center flex-wrap justify-content-center align-items-center px-5 py-5">
             <div class="container">
-                <h2 class="fw-bold mb-3">Galeri Seruli</h2>
+                <h2 class="fw-bold mb-3">Galeri Seycis</h2>
                 <div class="row g-4 justify-content-center">
                     @include('partials.guest.cardgaleri')
 

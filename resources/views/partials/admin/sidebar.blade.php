@@ -7,9 +7,9 @@
 
     <a href="/admin/dasbor" class="d-flex text-decoration-none px-2 mb-4">
 
-        <img src="../assets/img/logoseruliblue.png" alt="" class="me-1" style="max-width: 36px; object-fit: cover;">
+        <img src="../assets/img/logoseycisblue.png" alt="" class="me-1" style="max-width: 36px; object-fit: cover;">
 
-        <span class="fs-4 fw-bold text-primary">Seruli</span>
+        <span class="fs-4 fw-bold text-primary">Seycis</span>
     </a>
 
     <ul class="nav nav-pills flex-column">

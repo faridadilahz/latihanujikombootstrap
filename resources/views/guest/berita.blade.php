@@ -2,7 +2,7 @@
 <html lang="en" data-bs-theme="light">
 
 <head>
-    <title>Berita - Seruli</title>
+    <title>Berita - Seycis</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -21,7 +21,7 @@
     <main class="mt-5 pt-6" style="background-color: #f5f5f5;">
         <div class="d-flex text-center flex-wrap justify-content-center align-items-center px-5 py-5">
             <div class="container">
-                <h2 class="fw-bold mb-3">Berita Seruli</h2>
+                <h2 class="fw-bold mb-3">Berita Seycis</h2>
                 <div class="row g-4 justify-content-center">
                     @include('partials.guest.cardberita')
                 </div>

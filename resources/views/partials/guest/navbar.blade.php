@@ -1,7 +1,7 @@
 <div class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top z-3 p-3 px-5">
     <a href="/beranda" class="d-flex align-items-center text-decoration-none">
-        <img src="../assets/img/logoseruliwhite.png" class="me-1" style="max-width: 36px; object-fit: cover;">
-        <p class="navbar-brand fw-bold mb-0">Seruli</p>
+        <img src="../assets/img/logoseyciswhite.png" class="me-1" style="max-width: 36px; object-fit: cover;">
+        <p class="navbar-brand fw-bold mb-0">Seycis</p>
     </a>
 
     <div class="collapse navbar-collapse position-absolute start-50 translate-middle-x">
