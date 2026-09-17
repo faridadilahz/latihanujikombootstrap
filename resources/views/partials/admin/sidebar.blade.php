@@ -9,7 +9,7 @@
 
         <img src="../assets/img/logoseruliblue.png" alt="" class="me-1" style="max-width: 36px; object-fit: cover;">
 
-        <span class="fs-4 fw-bold">Seruli</span>
+        <span class="fs-4 fw-bold text-primary">Seruli</span>
     </a>
 
     <ul class="nav nav-pills flex-column">
