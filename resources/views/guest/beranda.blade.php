@@ -38,7 +38,7 @@
 
         <div class="d-flex text-center justify-content-center align-items-center py-5">
             <div class="container">
-                <img src="../assets/img/fotoberanda.png" class="rounded-4 mb-4" style="max-width: 860px;">
+                <img src="../assets/img/fotoberanda.png" class="img-fluid rounded-4 mb-4" style="max-width: 860px; width: 100%; height: auto;">
                 <h1 class="fw-bold mb-3 text-black" style="font-family: 'Playfair Display">Mewujudkan generasi unggul,
                     berkarakter, dan kompeten di bidang
                     teknologi dan kejuruan. Siap kerja, santun, mandiri, dan kreatif.</h1>
