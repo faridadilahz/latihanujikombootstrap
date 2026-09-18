@@ -18,7 +18,7 @@
     <header>
         <!-- place navbar here -->
     </header>
-    <main class="d-flex min-vh-100">
+    <main class="d-flex flex-column flex-lg-row min-vh-100">
         @include('partials.admin.sidebar')
 
         <div class="flex-grow-1 p-4 px-4" style="background-color: #f5f5f5;">
@@ -33,8 +33,8 @@
                             class="fa-regular fa-calendar me-2"></i>{{ $beritas->created_at->locale('id')->translatedFormat('d F Y') }}
                     </p>
                     <h2 class="fw-bold mb-4" style="max-width: 850px;">{{ $beritas->judulberita }}</h2>
-                    <img src="{{ asset('storage/' . $beritas->gambarberita) }}" alt="" class="rounded-3 mb-3"
-                        style="max-width: 850px;">
+                    <img src="{{ asset('storage/' . $beritas->gambarberita) }}" alt="" class="rounded-3 mb-3 img-fluid"
+                        style="max-width: 850px; width: 100%; height: auto">
                     <p class="text-secondary" style="max-width: 850px;">{{ $beritas->deskripsiberita }}</p>
                 </div>
             </div>
