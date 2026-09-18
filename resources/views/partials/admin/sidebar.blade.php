@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
-<div class="d-flex flex-column bg-white p-3 text-primary sticky-top w-100 w-lg-auto vh-lg-100 overflow-y-lg-auto shadow-sm" style="min-width: 256px;">
+<div class="d-flex flex-column bg-white p-3 text-primary sticky-top w-100 w-lg-auto vh-lg-100 overflow-y-lg-auto shadow-sm sidebar-admin">
 
     <!-- Bar Atas: Logo & Tombol Hamburger (Mobile) / Logo Only (Desktop) -->
     <div class="d-flex justify-content-between align-items-center mb-lg-4">
@@ -57,3 +57,12 @@
 
     </div>
 </div>
+
+<style>
+    @media (min-width: 992px) {
+        .sidebar-admin {
+            width: 256px !important;
+            flex-shrink: 0;
+        }
+    }
+</style>
