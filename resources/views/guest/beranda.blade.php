@@ -23,7 +23,8 @@
     <main style="background-color: #f5f5f5;">
         <div class="d-flex text-center bg-primary min-vh-100 justify-content-center align-items-center">
             <div class="container">
-                <h1 class="fw-bold mb-2 text-white">Selamat Datang di Website Resmi Seycis</h1>
+                <h1 class="fw-bold mb-2 text-white" style="font-family: 'Playfair Display">Selamat Datang di Website
+                    Resmi Seycis</h1>
                 <p class="text-secondary text-white">Mewujudkan generasi unggul, berkarakter, dan kompeten di bidang
                     teknologi dan kejuruan. Siap kerja, santun, mandiri, dan kreatif.</p>
 
@@ -38,7 +39,8 @@
         <div class="d-flex text-center justify-content-center align-items-center py-5">
             <div class="container">
                 <img src="../assets/img/fotoberanda.png" class="rounded-4 mb-4" style="max-width: 860px;">
-                <h1 class="fw-bold mb-3 text-black">Mewujudkan generasi unggul, berkarakter, dan kompeten di bidang
+                <h1 class="fw-bold mb-3 text-black" style="font-family: 'Playfair Display">Mewujudkan generasi unggul,
+                    berkarakter, dan kompeten di bidang
                     teknologi dan kejuruan. Siap kerja, santun, mandiri, dan kreatif.</h1>
                 <p class="text-secondary">Seycis merupakan salah satu Sekolah Menengah Kejuruan negeri
                     unggulan di Kota Bogor yang berkomitmen mencetak lulusan berkarakter, kompeten, dan siap bersaing di
@@ -48,26 +50,40 @@
             </div>
         </div>
 
-        <div class="d-flex text-center flex-wrap justify-content-center align-items-center px-5 py-5">
+        <div class="d-flex text-center flex-column justify-content-center align-items-center px-5 py-5">
             <h2 class="fw-bold mb-3">Jurusan di Seycis</h2>
-            <div class="d-flex gap-4">
-                <div class="card rounded-3 border-0 py-3 px-3">
-                    <h3 class="card-title">PPLG</h3>
-                    <p class="text-secondary">Pengembangan Perangkat Lunak dan Gim</p>
-                </div>
-                <div class="card rounded-3 border-0 py-3 px-3">
-                    <h3 class="card-title">TJKT</h3>
-                    <p class="text-secondary">Teknik Jaringan Komputer dan Telekomunikasi</p>
-                </div>
-                <div class="card rounded-3 border-0 py-3 px-3">
-                    <h3 class="card-title">TKRO</h3>
-                    <p class="text-secondary">Teknik Kendaraan Ringan Otomotif</p>
-                </div>
-                <div class="card rounded-3 border-0 py-3 px-3">
-                    <h3 class="card-title">TPFL</h3>
-                    <p class="text-secondary">Teknik Pengelasan dan Fabrikasi Logam</p>
+            <div class="container my-4">
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="card rounded-3 border-0 py-3 px-3">
+                            <h3 class="card-title">PPLG</h3>
+                            <p class="text-secondary">Pengembangan Perangkat Lunak dan Gim</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card rounded-3 border-0 py-3 px-3">
+                            <h3 class="card-title">TJKT</h3>
+                            <p class="text-secondary">Teknik Jaringan Komputer dan Telekomunikasi</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card rounded-3 border-0 py-3 px-3">
+                            <h3 class="card-title">TKRO</h3>
+                            <p class="text-secondary">Teknik Kendaraan Ringan Otomotif</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card rounded-3 border-0 py-3 px-3">
+                            <h3 class="card-title">TPFL</h3>
+                            <p class="text-secondary">Teknik Pengelasan dan Fabrikasi Logam</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
         </div>
 
         <div class="d-flex text-center flex-wrap justify-content-center align-items-center px-5 py-5">
