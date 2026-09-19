@@ -2,24 +2,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
-<div class="d-flex flex-column shadow-none bg-white p-3 text-primary sticky-top w-100 w-lg-auto vh-lg-100 overflow-y-lg-auto shadow-sm sidebar-admin">
+<div
+    class="d-flex flex-column shadow-none bg-white p-3 text-primary position-lg-fixed w-100 w-lg-auto vh-lg-100 overflow-y-lg-auto shadow-sm sidebar-admin">
 
     <!-- Bar Atas: Logo & Tombol Hamburger (Mobile) / Logo Only (Desktop) -->
     <div class="d-flex justify-content-between align-items-center mb-lg-4">
         <a href="/admin/dasbor" class="d-flex text-decoration-none px-2">
-            <img src="../assets/img/logoseycisblue.png" alt="" class="me-1" style="max-width: 36px; object-fit: cover;">
+            <img src="../assets/img/logoseycisblue.png" alt="" class="me-1"
+                style="max-width: 36px; object-fit: cover;">
             <span class="fs-4 fw-bold text-primary">Seycis</span>
         </a>
 
         <!-- Tombol Hamburger (Hanya tampil di HP) -->
-        <button class="navbar-toggler border-0 shadow-none d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#adminNavbarMenu" aria-controls="adminNavbarMenu" aria-expanded="false">
+        <button class="navbar-toggler border-0 shadow-none d-lg-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#adminNavbarMenu" aria-controls="adminNavbarMenu" aria-expanded="false">
             <i class="fa-solid fa-bars fs-3 text-primary"></i>
         </button>
     </div>
 
     <!-- Container Menu: Di HP tersembunyi (collapse), di Desktop selalu tampil (d-lg-flex) -->
     <div class="collapse d-lg-flex flex-column flex-grow-1 mt-3 mt-lg-0" id="adminNavbarMenu">
-        
+
         <ul class="nav nav-pills flex-column">
             <li class="nav-item">
                 <a href="/admin/dasbor"
@@ -46,7 +49,8 @@
             </li>
 
             <li class="nav-item">
-                <form action="{{ route('logout') }}" method="post" onsubmit="return confirm('Apakah Anda yakin keluar dari akun ini?')">
+                <form action="{{ route('logout') }}" method="post"
+                    onsubmit="return confirm('Apakah Anda yakin keluar dari akun ini?')">
                     @csrf
                     <button type="submit" class="nav-link text-danger w-100 text-start border-0 bg-transparent"><i
                             class="fa-solid fa-right-from-bracket me-3 width-fixed"></i>Keluar
@@ -62,7 +66,22 @@
     @media (min-width: 992px) {
         .sidebar-admin {
             width: 256px !important;
+            height: 100vh !important;
+            position: fixed !important;
+            top: 0;
+            left: 0;
+            overflow-y: auto;
             flex-shrink: 0;
+        }
+
+        .layout-content-admin {
+            margin-left: 0 !important;
+        }
+
+        @media (min-width: 992px) {
+            .layout-content-admin {
+                margin-left: 256px !important;
+            }
         }
     }
 </style>
