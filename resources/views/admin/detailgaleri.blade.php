@@ -21,7 +21,7 @@
     <main class="d-flex flex-column flex-lg-row min-vh-100">
         @include('partials.admin.sidebar')
 
-        <div class="flex-grow-1 p-4 px-4" style="background-color: #f5f5f5;">
+        <div class="flex-grow-1 p-4 px-4 layout-sidebar" style="background-color: #f5f5f5;">
             <div class="mx-auto" style="max-width: 850px">
                 <div class="mb-4 text-start">
                     <a href="/admin/galeri" class="text-decoration-none text-secondary mb-2"><i

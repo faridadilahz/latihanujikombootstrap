@@ -74,12 +74,12 @@
             flex-shrink: 0;
         }
 
-        .layout-content-admin {
+        .layout-sidebar {
             margin-left: 0 !important;
         }
 
         @media (min-width: 992px) {
-            .layout-content-admin {
+            .layout-sidebar {
                 margin-left: 256px !important;
             }
         }

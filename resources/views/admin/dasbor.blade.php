@@ -21,7 +21,7 @@
     <main class="d-flex flex-column flex-lg-row min-vh-100">
         @include('partials.admin.sidebar')
 
-        <div class="flex-grow-1 p-4 layout-content-admin" style="background-color: #f5f5f5;">
+        <div class="flex-grow-1 p-4 layout-sidebar" style="background-color: #f5f5f5;">
             <div class="container-fluid">
                 @include('partials.admin.topbar')
                 @include('partials.admin.statistic')

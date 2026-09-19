@@ -20,7 +20,7 @@
     </header>
     <main class="d-flex flex-column flex-lg-row min-vh-100">
         @include('partials.admin.sidebar')
-        <div class="flex-grow-1 p-4 px-4" style="background-color: #f5f5f5;">
+        <div class="flex-grow-1 p-4 px-4 layout-sidebar" style="background-color: #f5f5f5;">
 
             <div class="col-md-0 col-sm-4">
                 <div class="card border-0 rounded-3 mb-3">

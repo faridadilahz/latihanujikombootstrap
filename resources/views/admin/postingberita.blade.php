@@ -20,7 +20,7 @@
     </header>
     <main class="d-flex flex-column flex-lg-row min-vh-100">
         @include('partials.admin.sidebar')
-        <div class="flex-grow-1 p-4" style="background-color: #f5f5f5;">
+        <div class="flex-grow-1 p-4 layout-sidebar" style="background-color: #f5f5f5;">
             <div class="container-fluid" style="max-width: 900px;">
 
                 <form action="{{ route('berita.store') }}" method="POST" enctype="multipart/form-data">
