@@ -42,7 +42,7 @@
         </ul>
 
         <ul class="nav nav-pills flex-column mt-lg-auto pt-3 pt-lg-0 border-top border-light-subtle border-lg-0">
-            <li class="nav-item">
+            <li class="nav-item mt-2">
                 <a href="/admin/profil"
                     class="nav-link mb-2 text-primary {{ request()->is('admin/profil*') ? 'active text-white' : '' }}"
                     aria-current="page"><i class="fa-solid fa-user me-3 width-fixed"></i>Profil</a>
