@@ -10,7 +10,27 @@
     </div>
 
     <div class="topbar-right d-flex align-items-center gap-3">
-        <a href="/admin/berita/posting-berita" class="btn btn-primary"><i class="fa-solid fa-plus me-2"></i>Posting
-            Berita</a>
+        <a href="/admin/berita/posting-berita" class="btn btn-primary btn-fab"><i
+                class="fa-solid fa-plus me-0 me-lg-2 fa-lg"></i>
+            <span class="d-none d-lg-inline">Posting Berita</span>
+        </a>
     </div>
 </header>
+
+<style>
+    @media (max-width: 992px) {
+        .btn-fab {
+            position: fixed !important;
+            bottom: 24px;
+            right: 24px;
+            z-index: 2000;
+            width: 64px;
+            height: 64px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+    }
+</style>
