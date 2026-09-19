@@ -31,7 +31,7 @@
 
                 <div class="container">
                     <a href="/berita" class="btn btn-light fw-semibold text-primary me-2">Lihat Berita</a>
-                    <a href="/galeri" class="btn btn-outline-light fw-semibold text-white">Lihat Galeri</a>
+                    <a href="/galeri" class="btn btn-outline-light fw-semibold">Lihat Galeri</a>
                 </div>
             </div>
         </div>
