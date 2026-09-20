@@ -45,5 +45,8 @@ Route::middleware(['auth'])->group(function () {
     Route::put('admin/galeri/{id}', [GalerisController::class, 'update'])->name('galeri.update');
     Route::delete('admin/galeri/{id}', [GalerisController::class, 'destroy'])->name('galeri.destroy');
 
-    Route::get('/admin/profil', [ProfileController::class, 'index'])->name('profil');
+    Route::get('admin/profil', [ProfileController::class, 'index'])->name('profil');
+    Route::get('admin/kelolakatasandi', [ProfileController::class, 'kelolakatasandi'])->name('admin.kelolakatasandi');
+    Route::get('admin/ubahkatasandi', [ProfileController::class, 'ubahkatasandi'])->name('admin.ubahkatasandi');
+    Route::put('admin/updatekatasandi', [ProfileController::class, 'updatekatasandi'])->name('admin.updatekatasandi');
 });
