@@ -5,6 +5,7 @@ use App\Http\Controllers\BerandasController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\BeritasController;
 use App\Http\Controllers\GalerisController;
+use App\Http\Controllers\ProfileController;
 use App\Models\Galeris;
 use Illuminate\Support\Facades\Route;
 
@@ -44,7 +45,11 @@ Route::middleware(['auth'])->group(function () {
     Route::put('admin/galeri/{id}', [GalerisController::class, 'update'])->name('galeri.update');
     Route::delete('admin/galeri/{id}', [GalerisController::class, 'destroy'])->name('galeri.destroy');
 
-    Route::get('admin/profil', function() {
-        return view('admin.profil');
-    });
+    Route::get('admin/profil', [ProfileController::class, 'index'])->name('profil');
+    Route::get('/profil/edit', [ProfileController::class, 'edit'])->name('profil.edit');
+    Route::put('/profil/update', [ProfileController::class, 'update'])->name('profil.update');
+
+    Route::get('/kelola-sandi', [ProfileController::class, 'kelolasandi'])->name('profil.kelolakatasandi');
+    Route::get('/ubah-sandi', [ProfileController::class, 'ubahsandi'])->name('profil.ubahsandi');
+    Route::put('/update-sandi', [ProfileController::class, 'updatesandi'])->name('profil.updatesandi');
 });
