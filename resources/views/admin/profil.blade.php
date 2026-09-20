@@ -40,7 +40,7 @@
                     <div class="col-lg-8">
 
                         <div class="card border-0 rounded-3 shadow-sm mb-3">
-                            <a href="{{ route('profil.kelolakatasandi') }}" class="text-decoration-none">
+                            <a href="{{ route('admin.kelolakatasandi') }}" class="text-decoration-none">
                                 <div class="card-body p-4 d-flex justify-content-between align-items-center">
                                     <div>
                                         <h5 class="fw-bold mb-1 text-primary"><i class="fa-solid fa-key me-2"></i>Kelola
