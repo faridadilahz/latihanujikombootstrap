@@ -19,7 +19,7 @@
         <!-- place navbar here -->
     </header>
     <main>
-        <div class="d-flex bg-primary justify-content-center align-items-center min-vh-100">
+        <div class="d-flex bg-primary justify-content-center align-items-center min-vh-100 px-2">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-5 col-lg-5">
