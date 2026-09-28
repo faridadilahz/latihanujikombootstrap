@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Dashboard;
 use App\Models\Beritas;
 use App\Models\Galeris;
+use App\Models\Reviews;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -17,7 +18,11 @@ class DashboardController extends Controller
         $totalBerita = Beritas::count();
         $totalGaleri = Galeris::count();
 
-        return view('admin.dasbor', compact('totalBerita', 'totalGaleri'));
+        $averageRating = number_format(Reviews::avg('rating') ?? 0, 1);
+
+        $totalReviews = Reviews::count();
+
+        return view('admin.dasbor', compact('totalBerita', 'totalGaleri', 'averageRating', 'totalReviews'));
     }
 
     /**
