@@ -34,7 +34,7 @@
                 <div class="d-flex flex-row">
                     <a href="{{ route('admin.ubahkatasandi') }}" class="btn btn-primary fw-semibold me-2">Ubah Kata
                         Sandi</a>
-                    <a href="{{ route('profil') }}" class="btn btn-outline-primary fw-semibold">Kembali</a>
+                    <a href="{{ route('admin.profil') }}" class="btn btn-outline-primary fw-semibold">Kembali</a>
                 </div>
             </div>
         </div>

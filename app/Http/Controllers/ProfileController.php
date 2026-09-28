@@ -47,4 +47,30 @@ class ProfileController extends Controller
 
         return redirect()->route('admin.kelolakatasandi')->with('success', 'Kata sandi berhasil diperbarui!');
     }
+
+    public function ubahprofil() {
+        $user = Auth::user();
+        return view('admin.ubahprofil', compact('user'));
+    }
+
+    public function editprofil(Request $request) {
+    /** @var \App\Models\User $user */    
+    $user = Auth::user();
+
+    $request -> validate([
+        'name' => ['required', 'string', 'max:255'],
+        'email' => ['required', 'string', 'max:255', 'unique:users,email,' . $user->id],
+    ], [
+        'name.required' => 'Username wajib diisi.',
+            'email.required' => 'Email wajib diisi.',
+            'email.email' => 'Format email tidak valid.',
+            'email.unique' => 'Email sudah digunakan.',
+    ]);
+
+    $user->name = $request->name;
+    $user->email = $request->email;
+    $user->save();
+
+    return redirect()->route('admin.profil')->with('success');
+    }
 }

@@ -32,7 +32,8 @@
                                 <img src="../assets/img/logoSeycisblue.png" class="rounded-3 mb-3"
                                     style="max-width: 140px;">
                                 <h4 class="card-title fw-bold mb-1">{{ $user->name ?? 'Admin Seycis' }}</h4>
-                                <p class="text-secondary mb-0">{{ $user->email ?? 'adminseycis@gmail.com' }}</p>
+                                <p class="text-secondary mb-2">{{ $user->email ?? 'adminseycis@gmail.com' }}</p>
+                                <a href="{{ route('admin.ubahprofil') }}" class="text-primary">Edit</a>
                             </div>
                         </div>
                     </div>
