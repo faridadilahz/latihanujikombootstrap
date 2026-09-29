@@ -33,10 +33,14 @@ class BeritasController extends Controller
         $request->validate([
             'judulberita' => 'required',
             'deskripsiberita' => 'required',
-            'gambarberita' => 'required|image|mimes:png,jpg,webp|max:5012',
+            'gambarberita' => 'nullable|image|mimes:png,jpg,webp|max:5012',
         ]);
 
-        $imagePath = $request->file('gambarberita')->store('berita', 'public');
+        $imagePath = null;
+
+        if ($request->hasFile('gambarberita')) {
+            $imagePath = $request->file('gambarberita')->store('berita', 'public');
+        }
 
         Beritas::create([
             'judulberita' => $request->judulberita,
@@ -97,6 +101,11 @@ class BeritasController extends Controller
     public function destroy($id)
     {
         $beritas = Beritas::findOrFail($id);
+
+        if ($beritas->gambarberita && Storage::disk('public')->exists($beritas->gambarberita)) {
+            Storage::disk('public')->delete($beritas->gambarberita);
+        }
+
         $beritas->delete();
 
         return redirect()->route('berita')->with('success');

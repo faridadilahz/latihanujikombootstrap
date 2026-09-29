@@ -1,8 +1,16 @@
 @forelse ($beritas as $item)
     <div class="col-md-4 col-sm-6">
         <div class="card h-100 rounded-4 shadow-sm border-0">
-            <img src="{{ asset('storage/' . $item->gambarberita) }}" class="card-img-top"
-                style="height: 200px; object-fit: cover;">
+            @if ($item->gambarberita)
+                    <img src="{{ asset('storage/' . $item->gambarberita) }}" class="card-img-top"
+                        style="height: 200px; object-fit: cover;">
+                @else
+                    <div class="card-img-top bg-light d-flex flex-column align-items-center justify-content-center text-secondary"
+                        style="height: 200px;">
+                        <i class="fa-regular fa-image fs-1 mb-2"></i>
+                        <small class="fw-regular">Tanpa Gambar</small>
+                    </div>
+                @endif
             <div class="card-body text-start d-flex flex-column">
                 <small class="text-secondary">{{ $item->created_at->locale('id')->translatedFormat('d F Y') }}</small>
                 <h5 class="card-title fw-bold">{{ Str::limit($item->judulberita, 96) }}</h5>
