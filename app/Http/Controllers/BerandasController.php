@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Beritas;
 use App\Models\Galeris;
+use App\Models\Reviews;
 
 class BerandasController extends Controller
 {
@@ -38,5 +39,17 @@ class BerandasController extends Controller
     {
         $galeris  = Galeris::findOrFail($id);
         return view('guest.detailgaleri', compact('galeris'));
+    }
+
+    public function storeReview(Request $request) {
+        $request->validate([
+            'rating' => 'required|integer|min:1|max:5',
+        ]);
+
+        Reviews::create([
+            'rating' => $request->rating,
+        ]);
+
+        return back()->with('success', 'Terima kasih! Rating Anda berhasil dikirim.');
     }
 }

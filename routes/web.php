@@ -10,6 +10,7 @@ use App\Models\Galeris;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/beranda', [BerandasController::class, 'showBeranda']);
+Route::post('/review/store', [BerandasController::class, 'storeReview'])->name('review.store');
 
 Route::get('/berita', [BerandasController::class, 'berita']);
 Route::get('/berita/{id}', [BerandasController::class, 'showBerita'])->name('guest.detailberita');
