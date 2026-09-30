@@ -25,7 +25,10 @@
         <div class="flex-grow-1 p-4 layout-sidebar" style="background-color: #f5f5f5;">
             <div class="container-fluid">
                 @include('partials.admin.topbarberita')
-
+                @if (session('success'))
+                    <div class="alert alert-success">{{ session('success') }}
+                    </div>
+                @endif
                 <div>
                     <div class="row g-4">
                         @include('partials.admin.cardberita')
@@ -33,11 +36,6 @@
                 </div>
             </div>
         </div>
-        @if (session('success'))
-            <script>
-                alert("{{ session('success') }}");
-            </script>
-        @endif
     </main>
     <footer>
         <!-- place footer here -->
