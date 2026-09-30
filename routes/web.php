@@ -9,6 +9,8 @@ use App\Http\Controllers\ProfileController;
 use App\Models\Galeris;
 use Illuminate\Support\Facades\Route;
 
+Route::redirect('/', '/beranda');
+
 Route::get('/beranda', [BerandasController::class, 'showBeranda']);
 Route::post('/review/store', [BerandasController::class, 'storeReview'])->name('review.store');
 
