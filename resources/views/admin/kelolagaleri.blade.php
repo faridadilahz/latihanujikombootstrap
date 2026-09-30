@@ -33,6 +33,11 @@
                 </div>
             </div>
         </div>
+        @if (session('success'))
+            <script>
+                alert("{{ session('success') }}");
+            </script>
+        @endif
     </main>
     <footer>
         <!-- place footer here -->

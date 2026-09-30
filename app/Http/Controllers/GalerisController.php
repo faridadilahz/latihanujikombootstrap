@@ -42,7 +42,7 @@ class GalerisController extends Controller
             'gambargaleri' => $imagePath
         ]);
 
-        return redirect()->route('galeri')->with('success');
+        return redirect()->route('galeri')->with('success', 'Galeri berhasil diposting!');
     }
 
     /**
@@ -86,7 +86,7 @@ class GalerisController extends Controller
         $galeris->judulgaleri = $request->judulgaleri;
         $galeris->save();
 
-        return redirect()->route('galeri')->with('success');
+        return redirect()->route('galeri')->with('success', 'Galeri berhasil diperbarui!');
     }
 
     /**
@@ -97,6 +97,6 @@ class GalerisController extends Controller
         $galeris = Galeris::findOrFail($id);
         $galeris->delete();
 
-        return redirect()->route('galeri')->with('success');
+        return redirect()->route('galeri')->with('success', 'Berita berhasil dihapus!');
     }
 }
