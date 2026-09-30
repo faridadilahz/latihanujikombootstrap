@@ -23,6 +23,9 @@
         @include('partials.admin.sidebar')
         <div class="flex-grow-1 p-4 layout-sidebar" style="background-color: #f5f5f5;">
             <div class="container-fluid">
+                @if (session('success'))
+                    <div class="alert alert-success">{{ session('success') }}</div>
+                @endif
 
                 <div class="mb-4">
                     <label class="form-label text-dark fw-normal mb-2">Kata Sandi Saat Ini</label>
@@ -39,11 +42,6 @@
                 </div>
             </div>
         </div>
-        @if (session('success'))
-            <script>
-                alert("{{ session('success') }}");
-            </script>
-        @endif
     </main>
     <footer>
         <!-- place footer here -->
