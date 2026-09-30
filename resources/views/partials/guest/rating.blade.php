@@ -2,13 +2,6 @@
     <h3 class="card-title fw-bold">Beri Ulasan Seycis</h3>
     <p class="text-secondary">Seberapa puas Anda terhadap layanan Seycis?</p>
 
-    @if (session('success'))
-        <div class="alert alert-success alert-dismissible fade show border-0 mx-auto mb-3 w-75" role="alert">
-            <i class="fa-solid fa-circle-check me-2"></i>{{ session('success') }}
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-    @endif
-
     <form action="{{ route('review.store') }}" method="POST">
         @csrf
         <div class="d-flex align-items-center justify-content-center gap-2 mb-4 star-rating-group">
@@ -45,3 +38,9 @@
         color: #ffc107 !important;
     }
 </style>
+
+@if (session('success'))
+    <script>
+        alert("{{ session('success') }}");
+    </script>
+@endif

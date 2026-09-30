@@ -48,7 +48,7 @@ class BeritasController extends Controller
             'gambarberita' => $imagePath,
         ]);
 
-        return redirect()->route('berita')->with('success');
+        return redirect()->route('berita')->with('success', 'Berita berhasil diposting!');
     }
 
     /**
@@ -92,7 +92,7 @@ class BeritasController extends Controller
         $beritas->deskripsiberita = $request->deskripsiberita;
         $beritas->save();
 
-        return redirect()->route('berita')->with('success');
+        return redirect()->route('berita')->with('success', 'Berita berhasil diperbarui!');
     }
 
     /**
@@ -108,6 +108,6 @@ class BeritasController extends Controller
 
         $beritas->delete();
 
-        return redirect()->route('berita')->with('success');
+        return redirect()->route('berita')->with('success', 'Berita berhasil dihapus!');
     }
 }
